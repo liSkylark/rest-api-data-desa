@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "d5dcea7a-128f-434d-a23b-4e6c81615617",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39183569"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "detail-data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accep",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "district_code",
+							"value": "110101",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "082198",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "beru",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/village/store",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"village",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accep",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "district_code",
+							"value": "110101",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Tanjung-Gadang",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/village/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"village",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "district_code",
+							"value": "110101",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "082198",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "beru",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/village/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"village",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
